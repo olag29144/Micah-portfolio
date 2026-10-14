@@ -1513,3 +1513,24 @@ footer {
 .project-thumb--carousel svg {
   stroke: rgba(255, 176, 0, 0.5);
 }
+
+.nav-logo {
+  height: 38px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.footer-logo {
+  height: 48px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .nav-logo {
+    height: 30px;
+  }
+}
