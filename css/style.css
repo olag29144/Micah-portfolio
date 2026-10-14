@@ -1515,7 +1515,7 @@ footer {
 }
 
 .nav-logo {
-  height: 110px;
+  height: 150px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -1523,7 +1523,7 @@ footer {
 }
 
 .footer-logo {
-  height: 120px;
+  height: 160px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -1533,6 +1533,6 @@ footer {
 
 @media (max-width: 768px) {
   .nav-logo {
-    height: 75px;
+    height: 100px;
   }
 }
