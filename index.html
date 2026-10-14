@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Micah Agada – Graphic & UI Designer focused on creating impactful visuals, brand identities, and intuitive digital interfaces." />
+  <title>DevPortfolio – Micah Agada</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-brand" aria-label="DevPortfolio home">DevPortfolio</a>
+
+    <div class="nav-links-wrap">
+      <ul class="nav-links" role="list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+      </ul>
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <a href="#services" class="mobile-nav-link">Services</a>
+  <a href="#about" class="mobile-nav-link">About Me</a>
+  <a href="#skills" class="mobile-nav-link">Skills</a>
+  <a href="#projects" class="mobile-nav-link">Projects</a>
+  <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
+  <a href="#contact" class="mobile-nav-link">Contact</a>
+  <a href="#contact" class="nav-cta mobile-nav-link">Let's Talk</a>
+</div>
+
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+<section id="hero" aria-label="Hero introduction">
+  <div class="container hero-inner">
+
+    <div class="hero-left fade-up">
+      <h1 class="hero-greeting">
+        Hi, I'm <span class="gradient-text">Micah Agada</span> 👋
+      </h1>
+      <p class="hero-subtitle">Graphic &amp; UI Designer</p>
+      <p class="hero-desc">
+        I create impactful visuals, brand identities, and intuitive digital interfaces.
+        Creativity meets thoughtful design — let's build something meaningful together.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">
+          Contact Me
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="files/cv.pdf" download class="btn btn-outline" id="cvDownloadBtn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+      </div>
+      <div class="hero-stats" role="list" aria-label="Portfolio statistics">
+        <div class="stat-item" role="listitem">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-item" role="listitem">
+          <div class="stat-number">3+</div>
+          <div class="stat-label">Years</div>
+        </div>
+        <div class="stat-item" role="listitem">
+          <div class="stat-number">40+</div>
+          <div class="stat-label">Clients</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right fade-up" style="transition-delay:0.2s;" aria-hidden="true">
+      <div class="hero-glow"></div>
+      <div class="hero-shape">
+        <img
+          src="images/Smiling Man in Black Suit.png"
+          alt="Micah Agada – Graphic & UI Designer portrait"
+          class="hero-portrait"
+          id="heroPortrait"
+          onerror="this.style.display='none'; document.getElementById('portraitFallback').style.display='flex';"
+        />
+        <div class="hero-portrait-fallback" id="portraitFallback">
+          <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          <span>Add portrait image<br/>to images/ folder</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ SERVICES ═══════════════════════════════ -->
+<section id="services" class="section-padding" aria-label="Services">
+  <div class="container">
+
+    <div class="section-heading fade-up">
+      <h2>My <span class="gradient-text">Services</span></h2>
+    </div>
+    <p class="section-subtitle fade-up">Comprehensive digital solutions tailored to your business needs</p>
+
+    <div class="services-grid" id="servicesGrid">
+
+      <article class="service-card fade-up">
+        <div class="service-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        </div>
+        <h3 class="service-title">UI/UX Design</h3>
+        <p class="service-desc">Crafting intuitive digital interfaces and seamless user experiences that delight users and strengthen brands.</p>
+      </article>
+
+      <article class="service-card fade-up" style="transition-delay:0.08s;">
+        <div class="service-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+        </div>
+        <h3 class="service-title">Video Editing</h3>
+        <p class="service-desc">Producing polished, engaging video content with clean cuts, motion graphics, and compelling visual storytelling. (Junior)</p>
+      </article>
+
+      <article class="service-card fade-up" style="transition-delay:0.16s;">
+        <div class="service-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+        </div>
+        <h3 class="service-title">Graphics Design</h3>
+        <p class="service-desc">Designing impactful visuals, brand identities, print materials, and digital assets that communicate clearly and consistently.</p>
+      </article>
+
+      <article class="service-card fade-up" style="transition-delay:0.04s;">
+        <div class="service-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        </div>
+        <h3 class="service-title">Content Creation</h3>
+        <p class="service-desc">Developing compelling written and visual content for social media, websites, and campaigns that resonate with your audience.</p>
+      </article>
+
+      <article class="service-card fade-up" style="transition-delay:0.12s;">
+        <div class="service-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        </div>
+        <h3 class="service-title">Project Management</h3>
+        <p class="service-desc">Coordinating creative projects from brief to delivery — keeping teams aligned, timelines on track, and quality consistent.</p>
+      </article>
+
+      <article class="service-card fade-up" style="transition-delay:0.2s;">
+        <div class="service-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+        </div>
+        <h3 class="service-title">Brand Identity</h3>
+        <p class="service-desc">Building cohesive brand identities — logos, color systems, typography, and guidelines that help businesses communicate with clarity and purpose.</p>
+      </article>
+
+    </div>
+
+    <div class="services-cta fade-up">
+      <a href="#projects" class="btn btn-primary">
+        View All Projects
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="#contact" class="btn btn-outline">
+        Get in Touch
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+<section id="about" class="section-padding" aria-label="About Me">
+  <div class="container">
+    <div class="about-inner">
+
+      <div class="about-left fade-up">
+        <div class="collage-grid">
+
+          <div class="collage-tile" style="position:relative;">
+            <span class="collage-label">Professional</span>
+            <img src="images/collage-1.svg" alt="Laptop and workspace" />
+          </div>
+
+          <div class="collage-tile" style="position:relative;">
+            <span class="collage-label">Creative</span>
+            <img src="images/collage-2.svg" alt="Colorful creative digital artwork" />
+          </div>
+
+          <div class="collage-tile" style="position:relative;">
+            <span class="collage-label">Developer</span>
+            <img src="images/collage-3.svg" alt="Programming workstation with code" />
+          </div>
+
+          <div class="collage-tile" style="position:relative;">
+            <span class="collage-label">Designer</span>
+            <img src="images/collage-4.svg" alt="Website interface design on screen" />
+          </div>
+
+        </div>
+        <div class="experience-badge" aria-label="3 plus years of experience">
+          <span class="badge-number">3+</span>
+          <span class="badge-text">Years Experience</span>
+        </div>
+      </div>
+
+      <div class="about-right fade-up" style="transition-delay:0.15s;">
+        <h2 class="about-heading">About <span class="gradient-text">Me</span></h2>
+        <p class="about-role">Graphic &amp; UI Designer</p>
+        <p class="about-bio">
+          I'm Micah Agada, a Graphic &amp; UI Designer focused on creating impactful visuals,
+          brand identities, and intuitive digital interfaces. I combine creativity with thoughtful
+          design decisions to help brands communicate clearly and digital products deliver better experiences.
+          My work spans graphic design, visual identity, and UI design, with a focus on clarity,
+          consistency, and purpose.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></svg>
+              <span class="skill-cat-title">UI/UX Design</span>
+            </div>
+            <p class="skill-cat-list">Figma, Wireframing, Prototyping, User Research, Design Systems</p>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <svg viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+              <span class="skill-cat-title">Graphics Design</span>
+            </div>
+            <p class="skill-cat-list">Adobe Illustrator, Photoshop, InDesign, Brand Identity, Print</p>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+              <span class="skill-cat-title">Video &amp; Content</span>
+            </div>
+            <p class="skill-cat-list">Premiere Pro, After Effects, Social Media, Copywriting</p>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              <span class="skill-cat-title">Project Mgmt</span>
+            </div>
+            <p class="skill-cat-list">Notion, Trello, Asana, Client Communication, Agile</p>
+          </div>
+        </div>
+
+        <div class="about-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            View Portfolio
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Contact Me
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ SKILLS ═══════════════════════════════ -->
+<section id="skills" class="section-padding" aria-label="Skills and Experience">
+  <div class="container">
+
+    <div class="section-heading fade-up">
+      <h2><span class="gradient-text">Skills</span> &amp; Experience</h2>
+    </div>
+    <p class="section-subtitle fade-up">My technical expertise and professional journey</p>
+
+    <div class="skills-experience-grid">
+
+      <div class="skills-col fade-up">
+        <h3>Design Skills</h3>
+
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">UI/UX Design (Figma)</span>
+            <span class="skill-bar-pct">90%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Graphics Design</span>
+            <span class="skill-bar-pct">88%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Brand Identity</span>
+            <span class="skill-bar-pct">85%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Adobe Illustrator / Photoshop</span>
+            <span class="skill-bar-pct">83%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="83"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Video Editing (Premiere Pro)</span>
+            <span class="skill-bar-pct">70%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Content Creation</span>
+            <span class="skill-bar-pct">80%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Project Management</span>
+            <span class="skill-bar-pct">75%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+        </div>
+      </div>
+
+      <div class="experience-col fade-up" style="transition-delay:0.15s;">
+        <h3>Work Experience</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-period">2023 – Present</div>
+            <div class="timeline-role">Graphic &amp; UI Designer</div>
+            <div class="timeline-company">Freelance</div>
+            <p class="timeline-desc">Creating brand identities, UI designs, and visual content for clients across multiple industries with a focus on clarity and purpose-driven design.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-period">2022 – 2023</div>
+            <div class="timeline-role">Content Creator &amp; Designer</div>
+            <div class="timeline-company">Digital Media Studio</div>
+            <p class="timeline-desc">Produced social media content, brand visuals, and short-form video assets that grew client engagement and strengthened brand consistency.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-period">2021 – 2022</div>
+            <div class="timeline-role">Junior Video Editor</div>
+            <div class="timeline-company">Creative Agency</div>
+            <p class="timeline-desc">Edited promotional videos, reels, and motion graphics using Premiere Pro and After Effects for brand campaigns and social media channels.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-period">2020 – 2021</div>
+            <div class="timeline-role">Design Intern</div>
+            <div class="timeline-company">BrandCraft Co.</div>
+            <p class="timeline-desc">Assisted with logo design, marketing collateral, and digital layouts while developing skills in Adobe Creative Suite and Figma.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
+<section id="projects" class="section-padding" aria-label="Projects">
+  <div class="container">
+
+    <div class="section-heading fade-up">
+      <h2>My <span class="gradient-text">Projects</span></h2>
+    </div>
+    <p class="section-subtitle fade-up">A selection of real work — click any card to explore the project</p>
+
+    <div class="projects-grid projects-grid--4">
+
+      <article class="project-card fade-up">
+        <div class="project-thumb-placeholder project-thumb--crypto" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.5 9a3 3 0 0 1 5 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Sharesat Application</h3>
+          <p class="project-desc">A crypto transaction app that makes sending and receiving crypto as easy and seamless as chatting on WhatsApp.</p>
+          <div class="project-tags">
+            <span class="project-tag">UI/UX Design</span>
+            <span class="project-tag">Figma</span>
+            <span class="project-tag">Crypto</span>
+          </div>
+          <div class="project-links">
+            <a href="https://www.figma.com/design/VH6t4yDfwXnNTOUTF4e01V/sharesat-project?node-id=0-1&t=yiK2d1axeAK8Vbx0-1" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Sharesat Application on Figma">
+              <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View on Figma
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card fade-up" style="transition-delay:0.08s;">
+        <div class="project-thumb-placeholder project-thumb--event" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Momentum Platform</h3>
+          <p class="project-desc">A platform that lets you connect with people when you register for an event — building community even before the event day.</p>
+          <div class="project-tags">
+            <span class="project-tag">UI/UX Design</span>
+            <span class="project-tag">Figma</span>
+            <span class="project-tag">Social</span>
+          </div>
+          <div class="project-links">
+            <a href="https://www.figma.com/design/2PZEbL9EhXy1DDiWXJX9yr/Momentum?node-id=438-54&t=kKQC2JNN46VFcCrK-1" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Momentum Platform on Figma">
+              <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View on Figma
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card fade-up" style="transition-delay:0.16s;">
+        <div class="project-thumb-placeholder project-thumb--brand" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Tuntac Brand Guideline</h3>
+          <p class="project-desc">A comprehensive brand identity and guideline system defining the visual language, colors, typography, and usage rules for the Tuntac brand.</p>
+          <div class="project-tags">
+            <span class="project-tag">Brand Identity</span>
+            <span class="project-tag">Graphics Design</span>
+            <span class="project-tag">Guidelines</span>
+          </div>
+          <div class="project-links">
+            <a href="https://drive.google.com/drive/folders/1rxMGz-g6muFmkySWtY0OhWSC7MIHfpUT?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Tuntac Brand Guideline on Google Drive">
+              <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View on Drive
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card fade-up" style="transition-delay:0.04s;">
+        <div class="project-thumb-placeholder project-thumb--carousel" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><polyline points="7 10 12 15 17 10"/></svg>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Northstar Carousel</h3>
+          <p class="project-desc">A visual content carousel design — crafted graphic assets and layout compositions for impactful social media and presentation use.</p>
+          <div class="project-tags">
+            <span class="project-tag">Graphics Design</span>
+            <span class="project-tag">Content</span>
+            <span class="project-tag">Social Media</span>
+          </div>
+          <div class="project-links">
+            <a href="https://drive.google.com/drive/folders/1RyCMN3zBg_HGqLtujz356DIIgwIbl3q7?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Northstar Carousel on Google Drive">
+              <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View on Drive
+            </a>
+          </div>
+        </div>
+      </article>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ TESTIMONIALS ═══════════════════════════════ -->
+<section id="testimonials" class="section-padding" aria-label="Testimonials">
+  <div class="container">
+
+    <div class="section-heading fade-up">
+      <h2>Client <span class="gradient-text">Testimonials</span></h2>
+    </div>
+    <p class="section-subtitle fade-up">What clients say — replace with genuine reviews before publishing</p>
+
+    <div class="testimonials-grid">
+
+      <article class="testimonial-card fade-up">
+        <div class="testimonial-quote" aria-hidden="true">"</div>
+        <p class="testimonial-text">Micah transformed our brand identity from something generic into a design that truly represents who we are. The attention to detail and visual clarity was outstanding.</p>
+        <div class="testimonial-stars" aria-label="5 star rating">
+          <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar" aria-hidden="true">JD</div>
+          <div>
+            <div class="author-name">James Donovan</div>
+            <div class="author-role">CEO, Nexus Digital</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card fade-up" style="transition-delay:0.1s;">
+        <div class="testimonial-quote" aria-hidden="true">"</div>
+        <p class="testimonial-text">Working with Micah was seamless. He managed the project timeline perfectly, communicated clearly, and delivered UI designs that our team fell in love with immediately.</p>
+        <div class="testimonial-stars" aria-label="5 star rating">
+          <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar" aria-hidden="true">SC</div>
+          <div>
+            <div class="author-name">Sarah Chen</div>
+            <div class="author-role">Product Manager, Bloom App</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card fade-up" style="transition-delay:0.2s;">
+        <div class="testimonial-quote" aria-hidden="true">"</div>
+        <p class="testimonial-text">Micah's graphic design work elevated our entire campaign. The visuals were cohesive, purposeful, and our audience engagement went up significantly after launch.</p>
+        <div class="testimonial-stars" aria-label="5 star rating">
+          <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar" aria-hidden="true">MR</div>
+          <div>
+            <div class="author-name">Michael Reed</div>
+            <div class="author-role">Founder, Vanta Finance</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
+<section id="contact" class="section-padding" aria-label="Contact">
+  <div class="container">
+
+    <div class="section-heading fade-up">
+      <h2>Let's Work <span class="gradient-text">Together</span></h2>
+    </div>
+    <p class="section-subtitle fade-up">Have a project in mind? Let's discuss how we can bring it to life.</p>
+
+    <div class="contact-inner">
+
+      <div class="contact-left fade-up">
+        <p class="contact-desc">
+          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Send me a message and let's start a conversation.
+        </p>
+
+        <div class="contact-info-item">
+          <div class="contact-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">Email</div>
+            <a href="mailto:micahagada8@gmail.com" class="contact-info-value" style="color:var(--white);text-decoration:none;">micahagada8@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">WhatsApp</div>
+            <a href="https://wa.me/2348148606250" target="_blank" rel="noopener noreferrer" class="contact-info-value" style="color:var(--white);text-decoration:none;">08148606250</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">Location</div>
+            <div class="contact-info-value">Jalingo, Taraba State</div>
+          </div>
+        </div>
+
+        <div class="social-links" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter / X profile">
+            <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Dribbble profile">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="fade-up" style="transition-delay:0.15s;">
+        <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+          <div class="form-row">
+            <div class="form-group" id="fgName">
+              <label for="contactName">Full Name <span style="color:var(--orange)">*</span></label>
+              <input type="text" id="contactName" name="name" placeholder="Your full name" autocomplete="name" required />
+              <span class="form-error" id="errName">Please enter your full name.</span>
+            </div>
+            <div class="form-group" id="fgEmail">
+              <label for="contactEmail">Email Address <span style="color:var(--orange)">*</span></label>
+              <input type="email" id="contactEmail" name="email" placeholder="your@email.com" autocomplete="email" required />
+              <span class="form-error" id="errEmail">Please enter a valid email address.</span>
+            </div>
+          </div>
+          <div class="form-group" id="fgSubject">
+            <label for="contactSubject">Subject <span style="color:var(--orange)">*</span></label>
+            <input type="text" id="contactSubject" name="subject" placeholder="What is this about?" required />
+            <span class="form-error" id="errSubject">Please enter a subject.</span>
+          </div>
+          <div class="form-group" id="fgMessage">
+            <label for="contactMessage">Message <span style="color:var(--orange)">*</span></label>
+            <textarea id="contactMessage" name="message" placeholder="Tell me about your project..." required></textarea>
+            <span class="form-error" id="errMessage">Please enter a message (at least 10 characters).</span>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" id="submitBtn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <span id="submitLabel">Send Message</span>
+          </button>
+          <p class="form-notice">This form is a UI demo. No backend is connected — messages are not sent or stored. Integrate your preferred backend or service (e.g. EmailJS, Formspree) to enable real submissions.</p>
+        </form>
+
+        <div class="form-success contact-form" id="formSuccess" aria-live="polite">
+          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h3>Message Received!</h3>
+          <p>Thank you for reaching out. In a real deployment this is where a backend confirmation would appear. I'll be in touch soon!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+<footer aria-label="Site footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <span class="footer-brand-name">DevPortfolio</span>
+        <p class="footer-desc">Building digital experiences that combine innovative technology with elegant design. Available for freelance and full-time opportunities.</p>
+        <div class="footer-social social-links" aria-label="Footer social links">
+          <a href="#" class="social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">Mobile Development</a></li>
+          <li><a href="#services">UI/UX Design</a></li>
+          <li><a href="#services">Web Design</a></li>
+          <li><a href="#services">Technical Writing</a></li>
+          <li><a href="#services">Email Marketing</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; <span id="footerYear"></span> <span>DevPortfolio</span>. All rights reserved.</p>
+      <p class="footer-copy">Designed &amp; built with <span>♥</span> by Micah Agada</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
