@@ -1515,14 +1515,14 @@ footer {
 }
 
 .nav-logo {
-  height: 38px;
+  height: 56px;
   width: auto;
   display: block;
   object-fit: contain;
 }
 
 .footer-logo {
-  height: 48px;
+  height: 70px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -1531,6 +1531,6 @@ footer {
 
 @media (max-width: 768px) {
   .nav-logo {
-    height: 30px;
+    height: 44px;
   }
 }
